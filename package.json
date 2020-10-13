@@ -1,0 +1,28 @@
+{
+  "name": "static-site",
+  "version": "1.0.0",
+  "description": ".Readme maker",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mitchell Chee Quee",
+  "license": "MIT",
+  "dependencies": {
+    "inquirer": "^6.3.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mitchellcq/Mitchellcq-assignment-wk-8.git"
+  },
+  "keywords": [
+    "read",
+    "me",
+    "markdown",
+    "readme"
+  ],
+  "bugs": {
+    "url": "https://github.com/Mitchellcq/Mitchellcq-assignment-wk-8/issues"
+  },
+  "homepage": "https://github.com/Mitchellcq/Mitchellcq-assignment-wk-8#readme"
+}
