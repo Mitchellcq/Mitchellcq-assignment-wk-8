@@ -64,8 +64,21 @@ const questions = [
     }
 ];
 
+//async function awaiting all info inputs and api calls
+async function init() {
+    try {
+        //prompt user with questions
+        const answers = await inquirer.prompt(questions);
+        console.log("You entered: ", answers);
+        console.log("Please wait while we load your github data");
+
+        //Github api call
+        const github = await api.getuser(answers);
+    }
+}
 
 
+//make this function external?
 function generateReadme() {
 
 };
