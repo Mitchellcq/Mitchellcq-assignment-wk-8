@@ -2,7 +2,10 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const util = require('util');
-const axios = require('axios');
+
+//internal modules
+const api = require('./modules/api.js');
+const generateReadme = require('./modules/generateReadme.js');
 
 //questions with inquirer:
 //project name --> title of readme
@@ -75,10 +78,4 @@ async function init() {
         //Github api call
         const github = await api.getuser(answers);
     }
-}
-
-
-//make this function external?
-function generateReadme() {
-
 };
