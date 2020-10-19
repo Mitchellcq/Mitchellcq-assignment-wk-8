@@ -14,7 +14,7 @@ const questions = [
         name: 'username',
         default: 'Mitchellcq',
         validate: function (answer) {
-            if (answer.length < 1 || typeOf(answer) !== 'string') {
+            if (answer.length < 1) {
                 return console.log("Please enter a valid Github username.");
             } else {
                 return true;
@@ -27,7 +27,7 @@ const questions = [
         name: 'title',
         default: 'Project Title',
         validate: function (answer) {
-            if (answer.length < 1 || typeOf(answer) !== 'string') {
+            if (answer.length < 1) {
                 return console.log("Please enter a valid Project Title.");
             } else {
                 return true;
@@ -40,7 +40,7 @@ const questions = [
         name: 'description',
         default: 'Project Description',
         validate: function (answer) {
-            if (answer.length < 1 || typeOf(answer) !== 'string') {
+            if (answer.length < 1) {
                 return console.log("Please enter a breif description of your Project.");
             } else {
                 return true;
