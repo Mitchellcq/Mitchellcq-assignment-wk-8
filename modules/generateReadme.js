@@ -1,6 +1,6 @@
 function generateReadme(answers, github) {
 
-    // Generate Table of Contents conditionally based on userResponses
+    // Generate Table of Contents conditionally based on answers
     let draftToC = `## Table of Contents`;
 
     if (answers.installation !== '') {
