@@ -4,41 +4,31 @@ function generateReadme(answers, github) {
     let draftToC = `## Table of Contents`;
 
     if (answers.installation !== '') {
-        draftToC += `
-    * [Installation](#installation)` };
+        draftToC += `* [Installation](#installation)` };
 
     if (answers.usage !== '') {
-        draftToC += `
-    * [Usage](#usage)` };
+        draftToC += `* [Usage](#usage)` };
 
     if (answers.contributing !== '') {
         draftToC += `
-    * [Contributing](#contributing)` };
+* [Contributing](#contributing)` };
 
     if (answers.tests !== '') {
-        draftToC += `
-    * [Tests](#tests)` };
+        draftToC += `* [Tests](#tests)` };
 
 
     // Generate markdown for the top required portions of the README
-    let draftMarkdown =
-        `# ${answers.title}
-    ![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/${answers.username}/${answers.repo}?style=flat&logo=appveyor) ![Badge for GitHub last commit](https://img.shields.io/github/last-commit/${answers.username}/${answers.repo}?style=flat&logo=appveyor)
+    let draftMarkdown =`# ${answers.title}
+
+## Description: 
     
-    Check out the badges hosted by [shields.io](https://shields.io/).
-    
-    
-    ## Description: 
-    
-    ${answers.description}
-    `
+${answers.description}`
 
     // Add Table of Contents to markdown
     draftMarkdown += draftToC;
 
     // Add License section since License is required to Table of Contents
-    draftMarkdown += `
-    * [License](#license)`;
+    draftMarkdown += `* [License](#license)`;
 
 
     // Optional Installation section
@@ -47,9 +37,9 @@ function generateReadme(answers, github) {
         draftMarkdown +=
             `
     
-    ## Installation
+## Installation
     
-    *Steps required to install project and how to get the development environment running:*
+*Steps required to install project and how to get the development environment running:*
     
     ${answers.installation}`
     };
@@ -58,13 +48,9 @@ function generateReadme(answers, github) {
     // Optional Usage section
     if (answers.usage !== '') {
 
-        draftMarkdown +=
-
-            `
+        draftMarkdown += `## Usage 
     
-    ## Usage 
-    
-    *Instructions and examples for use:*
+*Instructions and examples for use:*
     
     ${answers.usage}`
     };
@@ -72,11 +58,9 @@ function generateReadme(answers, github) {
 
     // Optional Contributing section
     if (answers.contributing !== '') {
-        `
+`## Contributing
     
-    ## Contributing
-    
-    *Contributing is easy, just follow these instructions!*
+*Contributing is easy, just follow these instructions!*
     
     ${answers.contributing}`
     };
@@ -88,9 +72,9 @@ function generateReadme(answers, github) {
         draftMarkdown +=
             `
     
-    ## Tests
+## Tests
     
-    *Tests for application and how to run them:*
+*Tests for application and how to run them:*
     
     ${answers.tests}`
     };
@@ -99,8 +83,7 @@ function generateReadme(answers, github) {
     // License section is required
     draftMarkdown +=
         `
-    
-    ## License
+## License
     
     ${answers.license}
     `;
@@ -108,16 +91,15 @@ function generateReadme(answers, github) {
 
     // Questions / About Developer section
     let draftDev =
-        `
-    ---
+        `---
     
-    ## Questions?
+## Questions?
     
-    ![Developer Profile Picture](${github.avatar_url}) 
+![Developer Profile Picture](${github.avatar_url}) 
     
-    Please contact me with any questions or comments:
+Please contact me with any questions or comments:
    
-    GitHub: [@${github.login}](${github.url})
+GitHub: [@${github.login}](${github.url})
     `;
 
     // If GitHub email is not null, add to Developer section
@@ -125,7 +107,7 @@ function generateReadme(answers, github) {
 
         draftDev +=
             `
-    Email: ${github.email}
+Email: ${github.email}
     `};
 
     // Add developer section to markdown

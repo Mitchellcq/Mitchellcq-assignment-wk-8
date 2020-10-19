@@ -1,40 +1,28 @@
-# Mitchellcq-assignment-wk-8
-    ![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/Mitchellcq/undefined?style=flat&logo=appveyor) ![Badge for GitHub last commit](https://img.shields.io/github/last-commit/Mitchellcq/undefined?style=flat&logo=appveyor)
+# mitchellcq-assignment-wk-8
+
+## Description: 
     
-    Check out the badges hosted by [shields.io](https://shields.io/).
+command line app that creates a readme file based on user inputs## Table of Contents* [Installation](#installation)* [Usage](#usage)* [License](#license)
     
+## Installation
     
-    ## Description: 
+*Steps required to install project and how to get the development environment running:*
     
-    A command line application that generates a readme.md file based on your inputs and information.
-    ## Table of Contents
-    * [Installation](#installation)
-    * [Usage](#usage)
-    * [License](#license)
+    npm install before use## Usage 
     
-    ## Installation
+*Instructions and examples for use:*
     
-    *Steps required to install project and how to get the development environment running:*
-    
-    you will need to perform an NPM install command before using this application.
-    
-    ## Usage 
-    
-    *Instructions and examples for use:*
-    
-    The application is invoked with 'node index.js'. You need to answer the prompts in order to generate your readme.
-    
-    ## License
+    invoke: 'node ./index.js'. follow the prompts.
+## License
     
     MIT License
-    
     ---
     
-    ## Questions?
+## Questions?
     
-    ![Developer Profile Picture](https://avatars1.githubusercontent.com/u/68998298?v=4) 
+![Developer Profile Picture](https://avatars1.githubusercontent.com/u/68998298?v=4) 
     
-    Please contact me with any questions or comments:
+Please contact me with any questions or comments:
    
-    GitHub: [@Mitchellcq](https://api.github.com/users/Mitchellcq)
+GitHub: [@Mitchellcq](https://api.github.com/users/Mitchellcq)
     
