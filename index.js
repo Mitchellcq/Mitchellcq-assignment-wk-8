@@ -96,7 +96,7 @@ async function init() {
         console.log("Please wait while we load your github data");
 
         //Github api call
-        const github = await api.getuser(answers);
+        const github = await api.getUser(answers);
         console.log("You're Github account: ", github);
 
         //send answers and github to readme generator
