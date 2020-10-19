@@ -42,3 +42,5 @@ GitHub: [@Mitchellcq](https://api.github.com/users/Mitchellcq)
 
 
 #### Demonstration gif: 
+
+![readme generator demo](readmeGeneratorDemo.gif)
