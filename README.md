@@ -1,6 +1,10 @@
+#### The following readme, outside of this text and demonstration .gif at the bottom, has been generated using my app.
+
 # Mitchellcq-assignment-wk-8   
     
-#### The following readme, outside of this text and demonstration .gif at the bottom, has been generated using my app.
+![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/${userResponses.username}/${userResponses.repo}?style=flat&logo=appveyor) ![Badge for GitHub last commit](https://img.shields.io/github/last-commit/${userResponses.username}/${userResponses.repo}?style=flat&logo=appveyor)
+  
+  Check out the badges hosted by [shields.io](https://shields.io/).
 
 ## Description: 
     

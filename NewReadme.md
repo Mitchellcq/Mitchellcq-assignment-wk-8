@@ -2,17 +2,17 @@
 
 ## Description: 
     
-command line app that creates a readme file based on user inputs## Table of Contents* [Installation](#installation)* [Usage](#usage)* [License](#license)
+A command line application that generates a new readme file based on user inputs.## Table of Contents* [Installation](#installation)* [Usage](#usage)* [License](#license)
     
 ## Installation
     
 *Steps required to install project and how to get the development environment running:*
     
-    npm install before use## Usage 
+    You will need to perform an NPM install before you are able to use this application.## Usage 
     
 *Instructions and examples for use:*
     
-    invoke: 'node ./index.js'. follow the prompts.
+    The app is invoked with 'node ./index.js'
 ## License
     
     MIT License
